@@ -1,0 +1,8 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap);
+@import "~include-media";
+$navSize: 300px;
+$breakpoints: (
+    phone: 576px,
+    tablet: 768px,
+    desktop: 1024px,
+);

@@ -1,0 +1,11 @@
+.skills-list {
+    justify-content: space-between;
+    flex-direction: row;
+
+    li {
+        border-left: dashed;
+    }
+    .skill-name {
+        font-size: 18px;
+    }
+}

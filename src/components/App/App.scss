@@ -1,0 +1,53 @@
+@import "../../index.scss";
+
+$navSize: 300px;
+$mobile-width: 576px;
+
+body {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Raleway", sans-serif;
+}
+.portafolio {
+    .aside {
+        position: fixed;
+        text-align: -webkit-center;
+        text-align: center;
+        height: 100vh;
+        width: $navSize;
+        background-color: #f2f3f7;
+        float: left;
+        .aside-wrap {
+            padding: 1rem;
+        }
+        .photo {
+            border-radius: 100%;
+            margin: 0 auto;
+            width: 150px;
+            height: 150px;
+            background-image: url("../../assets/profilePhoto.jpeg");
+            background-size: cover;
+        }
+        h1.name {
+            font-size: x-large;
+            font-family: system-ui;
+        }
+        @include media("<=phone") {
+            position: static;
+            width: 100%;
+        }
+    }
+    .main-content {
+        height: 100%;
+        float: right;
+    }
+    @include media(">phone") {
+        .main-content {
+            width: calc(100% - #{$navSize});
+        }
+    }
+    @include media("<=phone") {
+        .main-content {
+            width: 100%;
+        }
+    }
+}
