@@ -1,2 +1,2 @@
-# marcoswendy.github.io
+# github.io
 MI CV
