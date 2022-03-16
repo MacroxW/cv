@@ -19,7 +19,7 @@ const Formacion = (props) => {
             <div className="card-body row">
                 <div className="col-8">
                     <h4> Universidad De Buenos Aires</h4>
-                    <h5 className="carrera"> Ingeniería en Informática
+                    <h5 className="carrera"> Ciencias de la Computación
                     </h5>
                 </div>
                 <div className="col-4 anio">
