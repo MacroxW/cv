@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Menu.scss';
 import { GetAppRounded, GitHub, LinkedIn } from '@material-ui/icons';
 import CheckIcon from '@material-ui/icons/Check';

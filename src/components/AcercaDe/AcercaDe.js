@@ -1,9 +1,8 @@
-import React from 'react';
-import * as data  from '../../assets/data.json';
+import React, { useEffect } from 'react';
+import data from '../../assets/data.js';
 
 const AcercaDe = () => {
-    const {about} = data;
-
+    const { about } = data;
     return (
         <div className="AcercaDe">
 
