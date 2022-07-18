@@ -21,7 +21,11 @@
     }
     
 }
-
+@include media("<=phone") {
+    .icons-contacto {
+        display: none;
+    }
+}
 
 .alerta {
     position: fixed;

@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Menu.scss';
 import { GetAppRounded, GitHub, LinkedIn } from '@material-ui/icons';
 import CheckIcon from '@material-ui/icons/Check';
 import { Alert } from '@material-ui/lab';
-
+import cv_marcoswendy from '../../assets/cv_marcoswendy.pdf';
 
 const OpenBrowser = (url) => {
     window.open(url, '_blank');
@@ -12,10 +12,9 @@ const OpenBrowser = (url) => {
 const Menu = () => {
     const [showMessage, setShowMessage] = useState(false)
 
-
     const DownloadCV = (e) => {
         e.preventDefault();
-        let path = './assets/CV-MarcosWendy.pdf';
+        let path = cv_marcoswendy;
 
         fetch(path)
             .then(resp => resp.blob())
@@ -25,7 +24,7 @@ const Menu = () => {
                 a.style.display = 'none';
                 a.href = url;
                 // the filename you want
-                a.download = 'CV-Wendy';
+                a.download = 'cv_marcoswendy.pdf';
                 document.body.appendChild(a);
                 a.click();
                 window.URL.revokeObjectURL(url);
@@ -36,19 +35,20 @@ const Menu = () => {
                         setShowMessage(false);
                         clearInterval(i);
                     };
-                    
+
                 }, 1000);
-                
+
             })
     }
 
 
     return (
-        <aside className="aside ">
+        <aside className="aside">
 
             <Alert className={showMessage ? "alerta" : "hideAlert"} icon={<CheckIcon fontSize="inherit" />} severity="success" >
                 Descarga completada!
             </Alert>
+
             <div className="aside-wrap">
                 <div className="profile">
                     <div className="photo "></div>
@@ -57,7 +57,10 @@ const Menu = () => {
                 <hr className="dropdown-divider"></hr>
 
             </div>
-            <div className="contentMenu "></div>
+            <div className="contentMenu ">
+
+
+            </div>
 
             <div className="icons-contacto">
                 <LinkedIn className="myicon" onClick={() => { OpenBrowser('https://www.linkedin.com/in/marcoswendy/') }} />

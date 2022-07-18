@@ -10,31 +10,31 @@ const skills = [
     },
     {
         name: 'Css/Scss/Sass',
-        stars: 5,
+        stars: 4,
     },
     {
         name: 'HTML/JS ',
-        stars: 5,
+        stars: 4,
     },
     {
         name: 'Bootstrap/Material-UI',
-        stars: 5,
+        stars: 4,
     },
     {
         name: 'Css/Scss/Sass',
-        stars: 5,
+        stars: 4,
     },
     {
         name: 'C#',
-        stars: 5,
+        stars: 4,
     },
     {
         name: 'ASP.NET MVC y WebForms',
-        stars: 5,
+        stars: 4,
     },
     {
         name: 'MySQL, MsSQL',
-        stars: 5,
+        stars: 4,
     },
     {
         name: 'PHP/Laravel',
@@ -50,7 +50,7 @@ const skills = [
     },
     {
         name: 'Git',
-        stars: 5,
+        stars: 4,
     },
 
 ]
@@ -66,7 +66,7 @@ const Skills = () => {
                     
                     return (
 
-                        <li className="list-group-item col-5">
+                        <li className="list-group-item col-5" key={object.name}>
                             <div className="skill-name">
                                 {object.name}
                             </div>

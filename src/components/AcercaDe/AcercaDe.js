@@ -1,20 +1,16 @@
 import React from 'react';
-
+import * as data  from '../../assets/data.json';
 
 const AcercaDe = () => {
+    const {about} = data;
+
     return (
         <div className="AcercaDe">
-           
+
             <h5>
-                Desde chico me apasiona la informática. 
-                Es por eso que en el 2016 entré a ORT, un colegio
-                donde incorporé las bases de la programación a partir de las cuáles
-                fuí aprendiendo más cosas y me profesionalicé. Dentro de estas cosas, 
-                la que más disfruto es el diseño Frontend
-                en React porque me parece divertido.
-                También me gusta trabajar con bases de datos y programar dentro del Backend.
+                {about}
             </h5>
-             <hr></hr>
+            <hr></hr>
         </div>);
 }
 
