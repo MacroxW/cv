@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cv/static/css/main.2df46618.css",
+    "main.js": "/cv/static/js/main.f2d4248b.js",
+    "static/media/cv_marcoswendy.pdf": "/cv/static/media/cv_marcoswendy.07a955bde20943804d1e.pdf",
+    "static/media/profilePhoto.jpeg": "/cv/static/media/profilePhoto.a6aec9285eb95d1a962f.jpeg",
+    "index.html": "/cv/index.html",
+    "main.2df46618.css.map": "/cv/static/css/main.2df46618.css.map",
+    "main.f2d4248b.js.map": "/cv/static/js/main.f2d4248b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2df46618.css",
+    "static/js/main.f2d4248b.js"
+  ]
+}
